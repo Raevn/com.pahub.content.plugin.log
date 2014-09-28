@@ -1,0 +1,12 @@
+<div class='heading1'>LOG</div>
+<div class='checkbox-wrapper'><input type='checkbox' data-bind='checked: model.log.showVerboseLog'></input><label data-bind="click: function() { model.log.showVerboseLog(!model.log.showVerboseLog())}"></label></div><span data-bind='text:  model.current_loc_data()["Show_verbose_information"] || "Show verbose information"'></span><br/>
+<div class='checkbox-wrapper'><input type='checkbox' data-bind='checked: model.log.showDebugLog'></input><label data-bind="click: function() { model.log.showDebugLog(!model.log.showDebugLog())}"></label></div><span data-bind='text:  model.current_loc_data()["Show_debug_information"] || "Show debug information"'></span><br/><br/>
+<!-- ko foreach: log_messages -->
+	<!-- ko if: (type != 'debug' || model.log.showDebugLog()) && (type != 'verb' || model.log.showVerboseLog()) -->
+		<div class='log_message'>
+			<div class='log_message_time' data-bind='text:getTimeString(time)'></div>
+			<span class='log_message_bracket'>[ </span><span class='log_message_type' data-bind='css: {log_message_debug_type: type == "debug", log_message_verbose_type: type == "verbose"}, text:type'></span><span class='log_message_bracket'> ] </span>
+			<span class='log_message_text' data-bind='css: {log_message_debug_text: debug, log_message_verbose_type: type == "verbose"}, text:message'></span>
+		</div>
+	<!-- /ko -->
+<!-- /ko -->

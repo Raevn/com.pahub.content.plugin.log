@@ -1,0 +1,35 @@
+.log_message {
+}
+
+.log_message_time {
+	width: 100px;
+	float: left;
+}
+
+.log_message_type {
+	color: #008CFF;
+	text-transform: uppercase;
+    display: inline-block;
+	width: 60px;
+	text-align: center;
+}
+
+.log_message_text {
+	color: #F9F9F9;
+}
+
+.log_message_verbose_text {
+	font-size: 12px;
+	font-style: italic;
+    display: inline-block;
+}
+
+.log_message_bracket {
+}
+
+.log_message_debug_type {
+	color: #CC8800;
+}
+.log_message_debug_text {
+	color: #888888;
+}
