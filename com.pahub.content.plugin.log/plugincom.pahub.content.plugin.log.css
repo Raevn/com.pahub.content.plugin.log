@@ -2,29 +2,38 @@
 }
 
 .log_message_time {
-	width: 100px;
-	float: left;
+	font-size: 11px;
+	width: 80px;
+    float: left;
+	clear: left;
 }
 
 .log_message_type {
+	font-size: 11px;
 	color: #008CFF;
 	text-transform: uppercase;
-    display: inline-block;
-	width: 60px;
+    float: left;
+	width: 44px;
 	text-align: center;
 }
 
 .log_message_text {
+	font-size: 11px;
 	color: #F9F9F9;
+    float: left;
+	width: calc(100% - 160px);
+	margin-left: 4px;
 }
 
 .log_message_verbose_text {
-	font-size: 12px;
+	font-size: 11px;
 	font-style: italic;
-    display: inline-block;
+    float: left;
 }
 
 .log_message_bracket {
+	font-size: 11px;
+    float: left;
 }
 
 .log_message_debug_type {

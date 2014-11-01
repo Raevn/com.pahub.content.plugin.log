@@ -4,22 +4,16 @@
     "display_name": "Log",
     "description": "Log Viewer",
     "author": "Raevn",
-    "version": "0.0.1",
-    "date": "2014/10/23",
-    "loc_data": [
-        {
-            "locale_id": "en-us",
-            "data": {
-                "Settings_Plugin": "Settings Plugin",
-                "core-settings_description": "Core Plugin for managing settings within PA Community Hub"
-            }
-        }
-    ],
+    "version": "0.1.0",
+    "date": "2014/11/01",
     "resources": [
         "plugincom.pahub.content.plugin.log.js",
         "plugincom.pahub.content.plugin.log.css"
     ],
     "load_func": "load_plugin_log",
     "unload_func": "unload_plugin_log",
-    "enabled": true
+    "enabled": true,
+    "required": {
+        "com.pahub.content.plugin.settings": ">=0.1.0"
+    }
 }
