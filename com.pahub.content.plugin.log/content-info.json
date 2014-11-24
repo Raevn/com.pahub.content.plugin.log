@@ -4,8 +4,8 @@
     "display_name": "Log",
     "description": "Log Viewer",
     "author": "Raevn",
-    "version": "0.1.0",
-    "date": "2014/11/01",
+    "version": "0.1.1",
+    "date": "2014/11/24",
     "resources": [
         "plugincom.pahub.content.plugin.log.js",
         "plugincom.pahub.content.plugin.log.css"
