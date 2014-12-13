@@ -4,8 +4,8 @@
     "display_name": "Log",
     "description": "Log Viewer",
     "author": "Raevn",
-    "version": "0.1.1",
-    "date": "2014/11/24",
+    "version": "0.1.2",
+    "date": "2014/12/13",
     "resources": [
         "plugincom.pahub.content.plugin.log.js",
         "plugincom.pahub.content.plugin.log.css"
@@ -14,6 +14,6 @@
     "unload_func": "unload_plugin_log",
     "enabled": true,
     "required": {
-        "com.pahub.content.plugin.settings": ">=0.1.0"
+        "com.pahub.content.plugin.settings": ">=0.3.0"
     }
 }

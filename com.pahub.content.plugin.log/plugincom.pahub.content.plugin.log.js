@@ -12,7 +12,7 @@ function load_plugin_log(data, folder) {
 		pahub.api.tab.setTabContent("section-log", "log", resource.data);
 	}});
 	
-	//pahub.api.setting.addSettingGroup("log", "Log Settings [Debug]");
+	pahub.api.setting.addSettingGroup("log", "");
 	pahub.api.setting.addSetting("log", "plugin.log.show_verbose_log", model.log.show_verbose_log, "boolean", null, false, "show_verbose_log", null, {});
 	pahub.api.setting.addSetting("log", "plugin.log.show_debug_log", model.log.show_debug_log, "boolean", null, false, "show_debug_log", null, {});
 }
